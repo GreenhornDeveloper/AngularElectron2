@@ -1,0 +1,7 @@
+  <div> 
+  <mat-toolbar>Welcome to the {{name}} Application </mat-toolbar>
+      <button (click)="readDb()" mat-raised-button color="primary">Get Results</button>
+      <mat-list>
+        <mat-list-item *ngFor="let result of results | async"> {{ result.info}} </mat-list-item>
+      </mat-list>
+  </div>
